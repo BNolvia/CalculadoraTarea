@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#D5D5D5"
-        android:textSize="22dp"
+        android:textSize="30dp"
         android:text=" " />
 
     <LinearLayout
@@ -155,15 +155,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/btnAc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="28dp"
-                android:text="Ac"
-                />
-
-            <Button
+                     <Button
                 android:id="@+id/btnDiv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -194,7 +186,13 @@
                 android:textSize="28dp"
                 android:text="+"
                 />
-
+            <Button
+                android:id="@+id/btnAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:text="Ac"
+                />
                </LinearLayout>
 
     </LinearLayout>
