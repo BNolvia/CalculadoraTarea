@@ -22,7 +22,7 @@
         android:id="@+id/Layout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FF8888"
+        android:background="#C4A7A7"
         android:layout_marginTop="21dp"
         android:layout_below="@+id/texto"
         android:layout_alignParentLeft="true"
