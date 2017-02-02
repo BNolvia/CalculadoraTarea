@@ -19,6 +19,7 @@ public class CalculadoraActivity extends AppCompatActivity implements OnClickLis
     boolean cambio=false;
     double [] numero=new double [20];
     double resultado;
+    int n;
 
     String message = "";
 
@@ -80,34 +81,74 @@ public class CalculadoraActivity extends AppCompatActivity implements OnClickLis
          try {
                 switch (seleccion) {
                     case R.id.btn0:
-                        pantalla.setText(a + "0");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("0");
+                            n=0;
+                        }else pantalla.setText(a + "0");
                         break;
                     case R.id.btn1:
-                        pantalla.setText(a + "1");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("1");
+                            n=0;
+                        }else pantalla.setText(a + "1");
                         break;
                     case R.id.btn2:
-                        pantalla.setText(a + "2");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("2");
+                            n=0;
+                        }else pantalla.setText(a + "2");
                         break;
                     case R.id.btn3:
-                        pantalla.setText(a + "3");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("3");
+                            n=0;
+                        }else pantalla.setText(a + "3");
                         break;
                     case R.id.btn4:
-                        pantalla.setText(a + "4");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("4");
+                            n=0;
+                        }else pantalla.setText(a + "4");
                         break;
                     case R.id.btn5:
-                        pantalla.setText(a + "5");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("5");
+                            n=0;
+                        }else pantalla.setText(a + "5");
                         break;
                     case R.id.btn6:
-                        pantalla.setText(a + "6");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("6");
+                            n=0;
+                        }else pantalla.setText(a + "6");
                         break;
                     case R.id.btn7:
-                        pantalla.setText(a + "7");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("7");
+                            n=0;
+                        }else pantalla.setText(a + "7");
                         break;
                     case R.id.btn8:
-                        pantalla.setText(a + "8");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("8");
+                            n=0;
+                        }else pantalla.setText(a + "8");
                         break;
                     case R.id.btn9:
-                        pantalla.setText(a + "9");
+                        if (n==1){
+                            pantalla.setText("");
+                            pantalla.setText("9");
+                            n=0;
+                        }else pantalla.setText(a + "9");
                         break;
 
                     case R.id.btnPunto:
@@ -147,6 +188,7 @@ public class CalculadoraActivity extends AppCompatActivity implements OnClickLis
                         decimal = false;
                         break;
                     case R.id.btnIgual:
+                        n=1;
                         numero[1] = Double.parseDouble(a);
                         if (suma == true) {
                             resultado = numero[0] + numero[1];
